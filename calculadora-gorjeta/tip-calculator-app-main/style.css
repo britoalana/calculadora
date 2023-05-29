@@ -1,0 +1,219 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --strong-cyan: hsl(172, 67%, 45%);
+    --very-dark-cyan: hsl(183, 100%, 15%);
+    --dark-grayish-cyan: hsl(186, 14%, 43%);
+    --grayish-cyan: hsl(184, 14%, 56%);
+    --light-grayish-cyan: hsl(185, 41%, 84%);
+    --very-light-grayish-cyan: hsl(189, 41%, 97%);
+    --white: hsl(0, 0%, 100%);
+}
+
+body {
+    background: var(--light-grayish-cyan);
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.title {
+    text-transform: uppercase;
+    color: var(--very-dark-cyan);
+    text-align: center;
+    padding: .5rem;
+    font-size: 24px;
+}
+
+.caixaPrincipal {
+    background-color: var(--white);
+    display: flex;
+    border-radius: 10px;
+    padding: 1rem;
+}
+
+.calculo {
+    background-color: var(--very-dark-cyan);
+    border-radius: 5px;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+}
+
+.inValor {
+    display: grid;
+}
+
+#inValor {
+    width: 200px;
+    border-radius: 5px;
+    color: var(--very-dark-cyan);
+    font-weight: 700;
+    font-size: 24px;
+    background-color: var(--very-light-grayish-cyan);
+    background-image: url(../tip-calculator-app-main/images/icon-dollar.svg);
+    background-repeat: no-repeat;
+    text-align: end;
+    border: none;
+    background-position: 5px;
+}
+
+
+
+
+
+.inPessoas {
+    display: grid;
+}
+
+#inPessoas {
+    background-image: url(../tip-calculator-app-main/images/icon-person.svg);
+    background-repeat: no-repeat;
+    width: 200px;
+    border-radius: 5px;
+    height: 30px;
+    color: var(--very-dark-cyan);
+    font-weight: 700;
+    font-size: 24px;
+    background-color: var(--very-light-grayish-cyan);
+    text-align: end;
+    border: none;
+    background-position: 5px;
+}
+
+#porcenCustom {
+
+    width: 100px;
+    border-radius: 5px;
+    height: 30px;
+    color: var(--very-dark-cyan);
+    font-weight: 700;
+    font-size: 24px;
+    background-color: var(--very-light-grayish-cyan);
+    border: none;
+    text-align: center;
+}
+
+.inPorcentagem {
+    width: 400px;
+    gap: 1rem;
+}
+
+#button {
+    width: 100px;
+    border-radius: 5px;
+    height: 30px;
+    background: var(--very-dark-cyan);
+    color: var(--white);
+    border: none;
+    cursor: pointer;
+}
+
+.caixa1 {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    justify-content: center;
+}
+
+#total {
+    color: var(--white);
+    font-size: 18px;
+}
+
+#tip {
+    color: var(--white);
+    font-size: 18px;
+}
+
+#perPerson {
+    color: var(--dark-grayish-cyan);
+}
+
+span {
+    color: var(--strong-cyan);
+    font-size: 30px;
+}
+
+#resetar {
+    width: 200px;
+    text-transform: uppercase;
+    height: 30px;
+    background-color: var(--dark-grayish-cyan);
+    border: none;
+    border-radius: 5px;
+    color: var(--very-dark-cyan);
+    font-weight: 700;
+    cursor: pointer;
+    align-self: center;
+    margin-top: 30px;
+}
+
+
+.outPerson {
+    display: flex;
+    justify-content: space-between;
+    padding: .8rem;
+}
+
+.outTotal {
+    display: flex;
+    justify-content: space-between;
+    padding: .8rem;
+}
+
+@media screen and (max-width: 768px) {
+    .caixaPrincipal {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 300px;
+
+    }
+
+    .caixa1 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: .5rem;
+    }
+
+    .inPorcentagem {
+        width: 250px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        align-self: center;
+    }
+
+
+
+    #button .inPorcentagem {
+        border-radius: 5px;
+        height: 30px;
+        background: var(--very-dark-cyan);
+        color: var(--white);
+        border: none;
+        cursor: pointer;
+
+        gap: 1rem;
+    }
+
+
+    .calculo {
+        margin-top: 1rem;
+        width: 100%;
+        padding: .5rem;
+    }
+}

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+  <title>Frontend Mentor | Tip calculator app</title>
+</head>
+
+<body>
+  <main>
+
+    <section class="title">
+      <p>Spli</p>
+      <p>tter</p>
+    </section>
+    <section class="caixaPrincipal">
+      <article class="caixa1">
+
+        <div class="inValor">Bill
+          <input type="number" id="inValor" placeholder="0">
+          <div id="error"></div>
+        </div>
+        <p class="titlePorcen">Select Tip %</p>
+        <div class="inPorcentagem">
+        <input id="button" type="button" value="5%">
+        <input id="button" type="button" value="10%">
+        <input id="button" type="button" value="15%">
+        <input id="button" type="button" value="25%">
+        <input id="button" type="button" value="50%">
+          <!-- <button id="inCinco">5%</button>
+        <button id="inDez">10%</button>
+        <button id="inQuinze">15%</button>
+        <button id="inVinteCinco">25%</button>
+        <button id="inCinquenta">50%</button> -->
+        <input type="number" id="porcenCustom" placeholder="Custom">
+      </div>
+        <div class="inPessoas">Number of People
+          <div id="error"></div>
+          <input type="number" id="inPessoas" placeholder="0">
+        </div>
+      </article>
+
+      <article class="calculo">
+        <div class="outPerson"><article class="titlePerson"><p id="tip">Tip Amount</p>
+          <p id="perPerson">/ person</p></article>
+        <span>$0.00</span></div>
+
+        <div class="outTotal">
+          <article class="titleTotal"><p id="total">Total</p>
+            <p id="perPerson">/ person</p></article>
+          <span>$0.00</span></div>
+
+        <button id="resetar">Reset</button>
+      </article>
+    </section>
+  </main>
+
+  <script src="./app.js"></script>
+</body>
+
+</html>
